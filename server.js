@@ -32,18 +32,3 @@ const PORT = process.env.port || 9000
 app.listen(PORT, () => console.log(`server is running on port ${PORT}`))
 
 
-//Note, to connect to locally installed mongodb via the mongodb compass by thru default the locahost url
-/*
-const defaultUri = 'mongodb://127.0.0.1:27017/first_local_db'
-mongoose.connect(
-    defaultUri,
-    {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-        useFindAndModify: false,
-        useCreateIndex: true
-    },
-    () => console.log(`Connected to local DB ${defaultUri}`)
-)
-*/
-
